@@ -1,6 +1,6 @@
 # AndroidMVPDesign
 
-一、概述
+#### 一、概述
 对于MVP（Model View Presenter），大多数人都能说出一二：“MVC的演化版本”，“让Model和View完全解耦”等等。本篇博文仅是为了做下记录，提出一些自己的看法，和帮助大家如何针对一个Activity页面去编写针对MVP风格的代码。
 
 对于MVP，我的内心有一个问题：
@@ -26,7 +26,7 @@ Presenter 负责完成View于Model间的交互
 ok，先简单了解下，文中会有例子到时候可以直观的感受下。
 
 小总结下，也就是说，之所以让人觉得耳目一新，是因为这次的跳跃是从并不标准的MVC到MVP的一个转变，减少了Activity的职责，简化了Activity中的代码，将复杂的逻辑代码提取到了Presenter中进行处理。与之对应的好处就是，耦合度更低，更方便的进行测试。借用两张图（出自:该文），代表上述的转变：
-
+#### 二、MCV和MVP对比
 ![图1](https://img-blog.csdn.net/20150622212916054)
 
 其实最明显的区别就是，MVC中是允许Model和View进行交互的，而MVP中很明显，Model与View之间的交互由Presenter完成。还有一点就是Presenter与View之间的交互是通过接口的（代码中会体现)。
